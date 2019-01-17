@@ -22,25 +22,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_settings, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_settings, menu);
+//        return true;
+//    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.mnuSettings) {
-            openSettings();
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void openSettings() {
-        FragmentUtils.replaceFragmentAddToBackstack(getSupportFragmentManager(), R.id.flContent,
-                SettingsFragment.newInstance(), SettingsFragment.class.getSimpleName(),
-                SettingsFragment.class.getSimpleName(), FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        if (item.getItemId() == R.id.mnuSettings) {
+//            openSettings();
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
+//
+//    private void openSettings() {
+//        FragmentUtils.replaceFragmentAddToBackstack(getSupportFragmentManager(), R.id.flContent,
+//                SettingsFragment.newInstance(), SettingsFragment.class.getSimpleName(),
+//                SettingsFragment.class.getSimpleName(), FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+//    }
 
     @Override
     public boolean onSupportNavigateUp() {

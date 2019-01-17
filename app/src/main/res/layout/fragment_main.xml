@@ -16,7 +16,6 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:title="@string/mainFragName"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
@@ -28,27 +27,26 @@
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/svLorem"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <TextView
-            android:id="@+id/txtLorem"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="8dp"
+            android:id="@+id/lblLorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/lblLorem_padding"
             android:text="@string/main_latin_ipsum"
             />
 
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:src="@drawable/ic_wrap_text_black_24dp"
         android:tint="@color/white"
         android:layout_gravity="end|bottom"

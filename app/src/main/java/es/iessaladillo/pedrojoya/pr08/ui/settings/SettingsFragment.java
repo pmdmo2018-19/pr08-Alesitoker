@@ -53,8 +53,9 @@ public class SettingsFragment extends PreferenceFragmentCompat {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        setupSettings();
+        onSharedPreferenceChangeListener = this::updateSumary;
         setupToolbar(requireView());
+        setupSettings();
     }
 
     private void setupToolbar(View view) {
@@ -76,7 +77,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 
     private void updateSumary(SharedPreferences sharedPreferences, String key) {
         Preference preference = findPreference(key);
-        Log.d("prueba", "ha entrado");
+
         if (TextUtils.equals(preference.getKey(), getString(R.string.prefLoremType_key))) {
             String[] values = getResources().getStringArray(R.array.prefLoremType_values);
             preference.setSummary(TextUtils.equals(sharedPreferences.getString(
