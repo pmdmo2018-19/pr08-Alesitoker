@@ -24,9 +24,7 @@ Ahorarr ese que llega a wan diodenoo ese pedazo de te va a hasé pupitaa te voy 
     </string-array>
     <string name="prefLoremType_defaultValue">Latin</string>
     <string name="settingsName">Settings</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="lblDetail_text">This is the detail page</string>
+    <string name="lblDetail_text">This is the detail fragment</string>
     <string name="detail_title">Detail</string>
+    <string name="detail_save_message">Detail has been save</string>
 </resources>

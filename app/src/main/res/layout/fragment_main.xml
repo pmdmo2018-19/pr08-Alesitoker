@@ -29,13 +29,15 @@
         android:id="@+id/svLorem"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingBottom="80dp"
+        android:clipToPadding="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <TextView
             android:id="@+id/lblLorem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/lblLorem_padding"
+            android:padding="@dimen/lbl_padding"
             android:text="@string/main_latin_ipsum"
             />
 

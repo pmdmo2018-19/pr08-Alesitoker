@@ -46,6 +46,18 @@ public class MainFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        settings.registerOnSharedPreferenceChangeListener(onSharePreferencesChangeListener);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        settings.unregisterOnSharedPreferenceChangeListener(onSharePreferencesChangeListener);
+    }
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_main, container, false);
@@ -56,7 +68,7 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         setupViews(requireView());
         onSharePreferencesChangeListener = (sharedPreferences, key) -> changeLorem();
-        settings = PreferenceManager.getDefaultSharedPreferences(getContext());
+        settings = PreferenceManager.getDefaultSharedPreferences(requireContext());
         changeLorem();
     }
 

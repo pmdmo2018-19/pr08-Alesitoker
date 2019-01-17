@@ -4,7 +4,6 @@ package es.iessaladillo.pedrojoya.pr08.ui.settings;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -38,11 +37,6 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         super.onPause();
         getPreferenceScreen().getSharedPreferences().
                 unregisterOnSharedPreferenceChangeListener(onSharedPreferenceChangeListener);
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
     }
 
     @Override

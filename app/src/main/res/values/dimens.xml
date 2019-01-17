@@ -2,6 +2,6 @@
     <!-- TODO -->
     <dimen name="detail_appbarLayout_height">200dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="lblLorem_padding">8dp</dimen>
+    <dimen name="lbl_padding">16dp</dimen>
     <dimen name="fab_elevation">10dp</dimen>
 </resources>

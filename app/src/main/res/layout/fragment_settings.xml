@@ -24,9 +24,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- AQUÍ ES DONDE SE MOSTRARÁN AUTOMÁTICAMENTE LAS PREFERENCIAS. ES MUY IMPORTANTE
-         QUE EL ATRIBUTO android:id TENGA EXACTAMENTE ESTE VALOR. LO DE targetApi ES
-         SIMPLEMENTE PARA QUE NO SE QUEJE -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
