@@ -16,15 +16,15 @@ Ahorarr ese que llega a wan diodenoo ese pedazo de te va a hasé pupitaa te voy 
     <string name="app_name">ToolbarAndPreferences</string>
     <string name="main_mnuSettings">Settings</string>
     <string name="mainFragName">Lorem</string>
-    <string name="prefLoremType_key">prefLoremType</string>
+    <string name="prefLoremType_key" translatable="false">prefLoremType</string>
     <string name="prefLoremType_title">Lorem type</string>
-    <string-array name="prefLoremType_values">
-        <item>Latin</item>
-        <item>Chiquito</item>
-    </string-array>
-    <string name="prefLoremType_defaultValue">Latin</string>
+    <string name="prefLoremType_defaultValue" translatable="false">Latin</string>
     <string name="settingsName">Settings</string>
     <string name="lblDetail_text">This is the detail fragment</string>
     <string name="detail_title">Detail</string>
     <string name="detail_save_message">Detail has been save</string>
+    <string-array name="prefLoremType_values" translatable="false">
+        <item>Latin</item>
+        <item>Chiquito</item>
+    </string-array>
 </resources>
